@@ -1,0 +1,61 @@
+body{
+    background: url("1466640033437.gif") no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0.7;
+}
+ul li{
+    padding: 15px;
+    position:relative;
+    width: 200px;
+    vertical-align: middle;
+    background-color: #34495E;
+    cursor: pointer;
+    border-top: 1px solid whitesmoke;
+    font-family: "FontAwesome";
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+ul li:hover{
+    background-color: #2ECC71;
+}
+ul > li{
+    border-right: 5px solid olive;
+}
+ul ul{
+    opacity: .8;
+    position: absolute;
+    border-left: 5px solid olive;
+    visibility: hidden;
+    left: 103%;
+    top: -2%;
+}
+ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+span{
+    margin-right:15px;
+}
+ul > li:nth-of-type(2)::after{
+    content: ">";
+    position: absolute;
+    margin-left: 55%;
+    color: whitesmoke;
+    font-size: 20px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 150px;
+    float: top;
+    margin-right: 80%;
+    color: #bbc1cc;
+}
